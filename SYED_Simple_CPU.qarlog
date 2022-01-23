@@ -1,0 +1,30 @@
+Quartus Prime Archive log --	C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Simple_CPU.qarlog
+
+Archive:	C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Simple_CPU.qar
+Date:		Mon Dec 20 10:44:49 2021
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/README.txt
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_ALU.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_ALU_Control.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Add_four.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Instruction.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_LPM_ADD.cmp
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_LPM_ADD.qip
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_LPM_ADD.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Memory.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_PC.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Register.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_SignExtend.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Simple_CPU.qpf
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Simple_CPU.qsf
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Simple_CPU.vhd
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/output_files/SYED_Simple_CPU.flow.rpt
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/output_files/SYED_Simple_CPU.map.rpt
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/output_files/SYED_Simple_CPU.map.summary
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 19 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

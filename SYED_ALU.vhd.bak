@@ -1,0 +1,116 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity SYED_ALU is
+port(
+			SYED_a, SYED_b: in std_logic_vector (31 downto 0);
+			SYED_result: out std_logic_vector (31 downto 0);
+			SYED_op: in std_logic_vector(3 downto 0);
+			SYED_Zero: out std_logic
+			);
+end SYED_ALU;
+
+architecture arch of SYED_ALU is
+	signal SYED_in1, SYED_in2: std_logic_vector(31 downto 0);
+	signal SYED_AND, SYED_OR, SYED_ADD, SYED_SUBTRACT,
+	SYED_MULTIPLYResult, SYED_DIVIDE: std_logic_vector(31 downto 0);
+	signal SYED_Answer: std_logic_vector(31 downto 0);
+
+component SYED_Bitwise_AND
+  port (SYED_a, SYED_b : in std_logic_vector(31 downto 0);
+        SYED_result : out std_logic_vector(31 downto 0)
+    );
+end component;
+
+component SYED_Bitwise_OR
+  port (SYED_a, SYED_b : in std_logic_vector(31 downto 0);
+        SYED_result : out std_logic_vector(31 downto 0)
+    );
+end component;
+
+component SYED_LPM_ADD
+  port (dataa, datab : in std_logic_vector(31 downto 0);
+        result : out std_logic_vector(31 downto 0)
+    );
+end component;
+
+component SYED_LPM_SUBTRACT
+  port (dataa, datab: in std_logic_vector(31 downto 0);
+        result : out std_logic_vector(31 downto 0)
+    );
+end component;
+
+component SYED_Multiply
+  port (SYED_a, SYED_b: in std_logic_vector(31 downto 0);
+        SYED_result : out std_logic_vector(31 downto 0)
+    );
+end component;
+
+component SYED_LPM_DIVIDE
+  port (denom, numer: in std_logic_vector(31 downto 0);
+        quotient : out std_logic_vector(31 downto 0)
+    );
+end component;
+				
+begin
+SYED_in1 <= SYED_a;
+SYED_in2 <= SYED_b;
+
+SYED_ANDFunction: SYED_Bitwise_AND 
+	port map( SYED_a => SYED_in1,
+					SYED_b => SYED_in2, 
+					SYED_result => SYED_AND);
+
+SYED_ORFunction: SYED_Bitwise_OR 
+	port map( SYED_a => SYED_in1,
+					SYED_b => SYED_in2, 
+					SYED_result => SYED_OR);					
+
+SYED_LPM_ADDFunction: SYED_LPM_ADD 
+	port map( dataa => SYED_in1,
+					datab => SYED_in2, 
+					result => SYED_ADD);
+
+SYED_LPM_SUBTRACTFunction: SYED_LPM_SUBTRACT
+	port map( dataa => SYED_in1,
+					datab => SYED_in2, 
+					result => SYED_SUBTRACT);
+
+SYED_LPM_MULTIPLYFunction: SYED_MulTIPLY
+	port map( SYED_a => SYED_in1,
+					SYED_b => SYED_in2, 
+					SYED_result => SYED_MULTIPLYresult);
+
+SYED_DIVIDEFunction: SYED_LPM_DIVIDE 
+	port map( numer => SYED_in1,
+					denom => SYED_in2, 
+					quotient => SYED_DIVIDE);
+					
+process (SYED_a,SYED_b,SYED_op)
+begin
+		case SYED_op is 
+			when "0000" =>
+			SYED_Answer <= SYED_AND;
+			when "0001" =>			
+			SYED_Answer <= SYED_OR;
+			when "0010" =>
+			SYED_Answer <= SYED_ADD;
+			when "0011" =>
+			SYED_Answer <= SYED_SUBTRACT;
+			when "0100" =>
+			SYED_Answer <= SYED_MULTIPLYresult;
+			when "0101" =>
+			SYED_Answer <= SYED_DIVIDE;
+			when others =>
+				NULL;
+		end case;
+		if (SYED_Answer = "00000000000000000000000000000000") then
+			SYED_Zero <= '1';
+		else
+			SYED_Zero <= '0';
+		end if;
+		SYED_Result <= SYED_Answer;
+end process;
+
+end arch;

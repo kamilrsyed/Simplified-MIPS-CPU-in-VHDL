@@ -1,0 +1,108 @@
+Archive Project report for SYED_Simple_CPU
+Mon Dec 20 10:44:49 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Mon Dec 20 10:44:49 2021 ;
+; Revision Name          ; SYED_Simple_CPU                       ;
+; Top-level Entity Name  ; SYED_Simple_CPU                       ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Critical Warning: Analysis & Elaboration was not run successfully.
+    Critical Warning: The 'Automatically detected source files' file subset will attempt to guess which files are needed. The archive file will likely be larger than required and may still be incomplete.
+Warning (225010): Analysis was not performed on the current project. The Quartus Prime software may not be able to automatically locate all project files.
+Info: Parsing: SYED_Add_four.vhd
+Info: Parsing: SYED_ALU.vhd
+Info: Parsing: SYED_Instruction.vhd
+Info: Parsing: SYED_Memory.vhd
+Info: Parsing: SYED_Simple_CPU.vhd
+Info: Parsing: SYED_PC.vhd
+Info: Parsing: SYED_Register.vhd
+Info: Parsing: SYED_SignExtend.vhd
+Info: Parsing: SYED_ALU_Control.vhd
+Info: Parsing: SYED_LPM_ADD.vhd
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_Simple_CPU.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'SYED_Simple_CPU.archive.rpt'
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 13 errors, 5 warnings
+    Error: Peak virtual memory: 4823 megabytes
+    Error: Processing ended: Mon Dec 20 10:44:49 2021
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:27
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
+; output_files/SYED_Simple_CPU.flow.rpt                        ;
+; output_files/SYED_Simple_CPU.map.rpt                         ;
+; output_files/SYED_Simple_CPU.map.summary                     ;
+; README.txt                                                   ;
+; SYED_Add_four.vhd                                            ;
+; SYED_ALU.vhd                                                 ;
+; SYED_ALU_Control.vhd                                         ;
+; SYED_Instruction.vhd                                         ;
+; SYED_LPM_ADD.cmp                                             ;
+; SYED_LPM_ADD.qip                                             ;
+; SYED_LPM_ADD.vhd                                             ;
+; SYED_Memory.vhd                                              ;
+; SYED_PC.vhd                                                  ;
+; SYED_Register.vhd                                            ;
+; SYED_SignExtend.vhd                                          ;
+; SYED_Simple_CPU.qpf                                          ;
+; SYED_Simple_CPU.qsf                                          ;
+; SYED_Simple_CPU.vhd                                          ;
++--------------------------------------------------------------+
+
+

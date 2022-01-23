@@ -1,0 +1,30 @@
+Quartus Prime Archive log --	C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/__SYED_Simple_CPU.auto.qarlog
+
+Archive:	C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/__SYED_Simple_CPU.auto.qar
+Date:		Mon Dec 20 10:44:49 2021
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/SYED_LPM_ADD.cmp
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/db/SYED_Simple_CPU.qpf
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/output_files/SYED_Simple_CPU.flow.rpt
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/output_files/SYED_Simple_CPU.map.rpt
+C:/Users/krsye/Documents/CCNY/CSC 342/mips_cpu/output_files/SYED_Simple_CPU.map.summary
+README.txt
+SYED_ALU.vhd
+SYED_ALU_Control.vhd
+SYED_Add_four.vhd
+SYED_Instruction.vhd
+SYED_LPM_ADD.qip
+SYED_LPM_ADD.vhd
+SYED_Memory.vhd
+SYED_PC.vhd
+SYED_Register.vhd
+SYED_SignExtend.vhd
+SYED_Simple_CPU.qsf
+SYED_Simple_CPU.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 19 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
