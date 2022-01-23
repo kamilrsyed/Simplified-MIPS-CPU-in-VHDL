@@ -1,4 +1,4 @@
-************************** README.txt ****************************
+************************** README ****************************
 
 This is the readme file to verify and simulate this design.
 
