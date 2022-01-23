@@ -48,4 +48,4 @@ add
 store in memory:
 sw
 
-enter the instrucionts and then simulate the CPU control file in modelsim to verify the design
+enter the instructions and then simulate the CPU control file in modelsim to verify the design
